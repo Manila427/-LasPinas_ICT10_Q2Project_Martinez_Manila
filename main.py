@@ -1,4 +1,3 @@
-
 from pyscript import document, when
 
 non_metals = {
