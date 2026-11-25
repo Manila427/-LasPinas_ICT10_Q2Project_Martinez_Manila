@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Non-Metal Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(73, 109, 151);
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgb(184, 211, 218);
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        .reactor {
+            width: 35px;
+            height: 35px;
+            background-color: rgb(237, 229, 136);
+            border: 3px solid white;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        main {
+            background-color: white;
+            width: 350px;
+            max-width: 85%;
+            margin: 40px auto;
+            padding: 25px;
+            border: 2px solid rgb(14, 82, 87);
+            border-radius: 10px;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        input[type="button"],
+        button {
+            background-color: rgb(45, 213, 112);
+            color: white;
+            padding: 10px 25px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover,
+        button:hover {
+            background-color: rgb(0, 68, 128);
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: rgb(180, 180, 255);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="reactor"></div>
+        <h1>Non-Metal Elements</h1>
+        <p>Periodic-Table Information Table</p>
+    </header>
+
+    <main>
+        <form id="elementForm">
+            <h4>Element Name or Symbol</h4>
+            <input type="text" id="elementInput" placeholder="Enter Element Name or Symbol"><br>
+            <button type="submit">Enter</button>
+        </form>
+        <div id="result"></div>
+        <a class="back-link" href="index.html">Back to Home</a>
+    </main>
+
+    <script type="py" src="./main.py"></script>
+</body>
+</html>
